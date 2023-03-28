@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IFL3Djs</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <style>
+      body {
+        font-family: Monospace;
+        background-color: #000000;
+        margin: 0px;
+        overflow: hidden;
+      }
+      a {
+        color: skyblue;
+      }
+      #start {
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+    <div id="start">
+      <a href="javascript:addScript();">Click to start</a>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+
+    <script type="text/javascript" src="./js/three.min.js"></script>
+    <script type="text/javascript" src="./js/ShaderExtras.js"></script>
+    <script type="text/javascript" src="./js/ShaderNormalColor.js"></script>
+    <script type="text/javascript" src="./js/ShaderLambertColor.js"></script>
+    <script type="text/javascript" src="./js/ShaderPhongColor.js"></script>
+
+    <script type="text/javascript" src="./js/EffectComposer.js"></script>
+    <script type="text/javascript" src="./js/RenderPass.js"></script>
+    <script type="text/javascript" src="./js/BloomPass.js"></script>
+    <script type="text/javascript" src="./js/ShaderPass.js"></script>
+    <script type="text/javascript" src="./js/MaskPass.js"></script>
+    <script type="text/javascript" src="./js/SavePass.js"></script>
+    <script type="text/javascript" src="./js/FilmPass.js"></script>
+
+    <script type="text/javascript" src="./js/Stats.js"></script>
+    <script type="text/javascript" src="./js/Detector.js"></script>
+
+    <script>
+      window.embed = document.location.hash == "#embed";
+
+      $(document).ready(function () {
+        if (!window.embed) addScript();
+      });
+
+      function addScript() {
+        $("#start").remove();
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        script.setAttribute("src", "./js/app.js");
+        document.getElementsByTagName("head")[0].appendChild(script);
+
+        if (window.embed) $(".dg ac").hide();
+      }
+    </script>
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 01:55:50 Feb 06, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:25:03 Mar 28, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 94.734 (11)
+  exclusion.robots: 0.232
+  exclusion.robots.policy: 0.222
+  cdx.remote: 0.064
+  esindex: 0.011
+  LoadShardBlock: 58.278 (3)
+  PetaboxLoader3.datanode: 100.296 (5)
+  load_resource: 1238.848 (2)
+  PetaboxLoader3.resolve: 1131.911 (2)
+-->
